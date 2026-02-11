@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "mossuse",
+  "version": "1.0.0",
+  "name": "Moss Use Helper",
+  "description": "Auto moss bonemeal & cleanup helper",
+  "icon": "assets/mossuse/icon.png",
+  "environment": "*",
+
+  "entrypoints": {
+    "client": [
+      "dev.tamago0314.mossuse.Mossuse"
+    ]
+  },
+
+  "mixins": [
+    "mossuse.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.15.0",
+    "fabric-api": "*",
+    "minecraft": "1.19.4",
+    "modmenu": "*"
+  },
+
+  "custom": {
+    "modmenu": {}
+  }
+}
